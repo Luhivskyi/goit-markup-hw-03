@@ -23,7 +23,6 @@ body {
   letter-spacing: 0.03em;
 }
 .container {
-  align-items: center;
   width: 1200px;
   margin-right: 15px;
   margin-left: 15px;
@@ -32,6 +31,11 @@ body {
 }
 .page-header {
   background: var(--primary-white-color);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
 }
 
 .adr-link {
@@ -50,7 +54,6 @@ body {
   color: var(--accent-color);
 }
 .adr-list {
-  display: flex;
   list-style: none;
   font-style: normal;
 }
@@ -136,6 +139,10 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+.hero-button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 
 .work-title,
@@ -245,6 +252,11 @@ body {
 }
 
 /* Стилі для portfolio.html*/
+.filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 .flex-container {
   width: 1200px;
@@ -258,6 +270,7 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
 .flex-element:nth-child(3n) {
   margin-right: 0;
 }
@@ -265,10 +278,6 @@ body {
   margin-bottom: 0;
 }
 
-.filter:hover,
-:focus {
-  color: var(--accent-color);
-}
 .filter-list {
   list-style: none;
 }
@@ -305,9 +314,22 @@ body {
   border-radius: 4px;
   text-decoration: none;
 }
+.button-p:hover,
+:focus {
+  color: var(--accent-color);
+}
+
+.filter.button-p:not(:last-child) {
+  margin-right: 8px;
+}
+
 .list {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+  padding-left: 0;
   text-decoration: none;
   list-style: none;
 }
