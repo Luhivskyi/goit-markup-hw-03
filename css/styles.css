@@ -30,6 +30,8 @@ body {
   align-items: center;
 }
 
+/* Header*/
+
 .page-header {
   background: var(--primary-white-color);
 }
@@ -56,9 +58,15 @@ body {
   font-style: normal;
   margin: 0;
   padding: 0;
+  margin-left: auto;
 }
+
 .adr-list .item:not(:last-child) {
   margin-right: 50px;
+}
+
+.main-nav {
+  display: flex;
 }
 
 /* Logo */
@@ -73,6 +81,7 @@ body {
   line-height: 1.2;
   text-decoration: none;
   margin-right: 93px;
+  align-self: center;
 }
 .logo:hover,
 .logo:focus {
@@ -90,10 +99,6 @@ body {
 }
 
 /* Site-nav */
-
-.site-nav {
-  margin-right: 331px;
-}
 
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -144,6 +149,8 @@ body {
   background-color: var(--accent-color);
 }
 
+/*Work*/
+
 .work-title,
 .team-title {
   color: var(--title-text-color);
@@ -161,6 +168,10 @@ body {
   list-style: none;
 }
 
+.feacher-list {
+  display: flex;
+}
+
 .feacher-title {
   color: var(--title-text-color);
   font-family: Roboto;
@@ -170,6 +181,10 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.feacher-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Work */
@@ -188,7 +203,12 @@ body {
   letter-spacing: 0.03em;
 }
 .work-list {
+  display: flex;
   list-style: none;
+}
+
+.work-item :not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Button */
@@ -206,7 +226,9 @@ body {
   letter-spacing: 0.06em;
   text-decoration: none;
 }
+
 /* Team */
+
 .team-title {
   font-family: Roboto;
   font-style: 400;
@@ -217,6 +239,7 @@ body {
   letter-spacing: 0.03em;
 }
 .photo {
+  display: flex;
   list-style: none;
 }
 .name-title {
@@ -236,9 +259,9 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.team-box {
-  display: flex;
-  flex-direction: row;
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .address:hover,
@@ -369,4 +392,8 @@ body {
 }
 .posters {
   text-decoration: none;
+}
+.footer-list {
+  list-style: none;
+  font-style: normal;
 }
