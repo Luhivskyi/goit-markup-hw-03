@@ -148,12 +148,31 @@ body {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
+.hero-box {
+  background-color: var(--secondary-black-color);
+}
+
+.container-hero {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
 
 /*Work*/
 
 .work-title,
 .team-title {
   color: var(--title-text-color);
+}
+
+.container-work {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /* Feachers */
@@ -185,6 +204,14 @@ body {
 
 .feacher-list-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.container-feacher {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /* Work */
@@ -263,6 +290,16 @@ body {
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
+
+.container-team {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*Footer*/
 
 .address:hover,
 :focus {
@@ -345,7 +382,7 @@ body {
   color: var(--accent-color);
 }
 
-.filter.button-p:not(:last-child) {
+.button-p:not(:last-child) {
   margin-right: 8px;
 }
 
