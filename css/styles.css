@@ -38,6 +38,8 @@ body {
 
 .page-header {
   background: var(--primary-white-color);
+  padding-top: 24px;
+  padding-bottom:25px;
 }
 
 .adr-link {
@@ -134,12 +136,16 @@ body {
   color: var(--accent-color);
 }
 
+
 /*HERO */
 
 .hero {
+  background: var(--secondary-black-color);
   text-align: center;
     margin-top: 94px;
   margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -158,6 +164,10 @@ body {
 .hero-button {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  width: 200px;
+height: 50px;
+  border-radius: 4px;
+  border: 1px solid  var(--accent-color);
 }
 .hero-box {
   background-color: var(--secondary-black-color);
@@ -272,7 +282,7 @@ body {
   margin-right: 30px;
 }
 
-.work-list a{
+.work-list img{
   display: block;
 }
 
@@ -294,9 +304,10 @@ body {
 
 /* TEAM */
 .team{  
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--secondary-white-color);
+  text-align: center;
 
 }
 
@@ -308,11 +319,15 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .photo {
   display: flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .name-title {
@@ -360,6 +375,8 @@ body {
 
 .footer {
   background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -390,6 +407,13 @@ body {
 }
 
 /* Стилі для portfolio.html*/
+
+.menu{
+  padding-bottom: 94px;
+  text-align: center;
+ 
+}
+
 .filter {
   display: flex;
   flex-direction: row;
@@ -419,7 +443,9 @@ body {
 }
 
 .filter-list {
-  list-style: none;
+  list-style: none; 
+  padding-top: 132px;
+  padding-bottom: 56px;
 }
 
 .names {
@@ -444,6 +470,12 @@ body {
   text-decoration: none;
 }
 
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+  
+}
+
+
 .button-p {
   font-family: Roboto;
   font-style: 400;
@@ -456,6 +488,8 @@ body {
   background: var(--secondary-white-color);
   border-radius: 4px;
   text-decoration: none;
+  border: none;
+ 
 }
 
 .button-p:hover,
@@ -463,9 +497,7 @@ body {
   color: var(--accent-color);
 }
 
-.button-p:not(:last-child) {
-  margin-right: 8px;
-}
+
 
 .list {
   display: flex;
