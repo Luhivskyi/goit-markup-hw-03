@@ -5,6 +5,7 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --secondary-white-color: #f5f4fa;
+  --secondary-grey-color: #ececec;
 }
 
 html {
@@ -39,7 +40,8 @@ body {
 .page-header {
   background: var(--primary-white-color);
   padding-top: 24px;
-  padding-bottom:25px;
+  padding-bottom: 25px;
+  border: 1px solid #ececec;
 }
 
 .adr-link {
@@ -115,7 +117,6 @@ body {
 
 .site-nav a {
   display: block;
- 
 
   color: var(--title-text-color);
   font-family: Roboto;
@@ -131,17 +132,16 @@ body {
   color: var(--accent-color);
 }
 
-.site-nav.link .current {
+.site-nav .current {
   color: var(--accent-color);
 }
-
 
 /*HERO */
 
 .hero {
   background: var(--secondary-black-color);
   text-align: center;
-  
+
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -151,7 +151,7 @@ body {
   background: var(--secondary-black-color);
   font-family: Roboto;
   font-style: 400;
-  font-weight: 700;
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   text-align: center;
@@ -163,9 +163,9 @@ body {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   width: 200px;
-height: 50px;
+  height: 50px;
   border-radius: 4px;
-  border: 1px solid  var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 .hero-box {
   background-color: var(--secondary-black-color);
@@ -195,10 +195,11 @@ height: 50px;
 }
 
 /* FEACHERS */
-.feachers{ 
-   margin-top: 94px;
-  margin-bottom: 94px;
-
+.feachers {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 94px;
+  padding-bottom: 0;
 }
 
 .feacher-list {
@@ -227,6 +228,8 @@ height: 50px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .feacher-list-item:not(:last-child) {
@@ -240,13 +243,18 @@ height: 50px;
   padding-right: 15px;
   padding-left: 15px;
 }
+.feacher-text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 /* WORK */
 .work {
   background: var(--primary-white-color);
-  margin-top: 94px;
-  margin-bottom: 94px;
-}
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .container-work {
@@ -282,7 +290,7 @@ height: 50px;
   margin-right: 30px;
 }
 
-.work-list img{
+.work-list img {
   display: block;
 }
 
@@ -303,12 +311,11 @@ height: 50px;
 }*/
 
 /* TEAM */
-.team{  
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--secondary-white-color);
   text-align: center;
-
 }
 
 .team-title {
@@ -380,6 +387,7 @@ height: 50px;
 }
 
 .logo-footer {
+  display: block;
   color: var(--title-text-color);
   font-family: Raleway, sans-serif;
   font-family: Raleway;
@@ -389,6 +397,7 @@ height: 50px;
   line-height: 1.2;
   text-decoration: none;
   align-self: center;
+  margin-bottom: 20px;
 }
 
 .container-footer {
@@ -408,17 +417,16 @@ height: 50px;
 
 /* Стилі для portfolio.html*/
 
-.menu{
+.menu {
+  padding-top: 94px;
   padding-bottom: 94px;
-  
- 
 }
 
-.filter {
+/* .filter {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
+} */
 
 .flex-container {
   width: 1200px;
@@ -443,9 +451,11 @@ height: 50px;
 }
 
 .filter-list {
-  list-style: none; 
-  margin-top: 94px;
-  margin-bottom: 56px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .names {
@@ -472,32 +482,34 @@ height: 50px;
 
 .filter-item:not(:last-child) {
   margin-right: 8px;
-  
 }
 
-
 .button-p {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  padding-right: 22px;
+  background: var(--secondary-white-color);
+  border-radius: 4px;
+
   font-family: Roboto;
   font-style: 400;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  background: var(--secondary-white-color);
-  border-radius: 4px;
+  background: none;
+
   text-decoration: none;
   border: none;
- 
 }
 
 .button-p:hover,
 :focus {
-  color: var(--accent-color);
+  background: var(--accent-color);
+  color: var(--primary-white-color);
 }
-
-
 
 .list {
   display: flex;
@@ -511,9 +523,11 @@ height: 50px;
 }
 
 .link-a {
+  display: block;
   color: var(--primary-white-color);
   text-decoration: none;
   font-style: normal;
+  margin-bottom: 9px;
 }
 
 .link-a:hover,
@@ -530,12 +544,14 @@ height: 50px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
-
   letter-spacing: 0.03em;
-
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+
+.link {
+  display: block;
+  margin-bottom: 9px;
 }
 
 .link:hover,
