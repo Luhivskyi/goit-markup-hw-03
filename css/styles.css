@@ -135,6 +135,11 @@ body {
 .site-nav .current {
   color: var(--accent-color);
 }
+.site-nav list {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 /*HERO */
 
@@ -157,6 +162,8 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .hero-button {
@@ -230,6 +237,11 @@ body {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 10px;
+}
+
+.feacher-list-item {
+  width: 270px;
+  height: 75px;
 }
 
 .feacher-list-item:not(:last-child) {
@@ -440,6 +452,8 @@ body {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
+  box-sizing: border-box;
+  border: 1px solid #eeeeee;
 }
 
 .flex-element:nth-child(3n) {
@@ -467,6 +481,8 @@ body {
   letter-spacing: 0.06em;
   color: var(--title-text-color);
   list-style: none;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .text {
@@ -478,6 +494,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   text-decoration: none;
+  margin-left: 24px;
 }
 
 .filter-item:not(:last-child) {
